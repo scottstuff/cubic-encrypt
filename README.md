@@ -15,6 +15,12 @@ Cubic Encrypt Text String Exercise
 - Docker used for Nginx web server
 - No SSL configured, sorry
 
+## Source code
+- https://github.com/scottstuff/cubic-encrypt
+- Other Projects
+- ng-poc: AWS Hosted Angular 5 app with S3, CloudFront and FireBase https://github.com/scottstuff/ng-poc
+- hade-graph: AWS Hosted JavaScript frontend and RESTful API https://github.com/scottstuff/hade-graph
+
 ## Files that were created for this exercise are:
 - index.html
 - encrypt.css
