@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en_US">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Cubic Text Encryption</title>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="encrypt.css">
+    </head>
+    <body>
+        <div class="hero-image"></div>
+        <main role="main">
+            <div class="container">
+                <div class="row row-spacing"></div>
+                <div id="main-menu-container">
+	                <div class="row">
+	                	<h1 class="center-it">Main Menu</h1>
+	                </div>
+	                <div class="row row-spacing"></div>
+	                <div class="row">
+	                    <div class="col-md-4"></div>
+	                    <div class="col-md-1">
+	                        <button id="main-menu-encrypt-option" class="btn btn-primary main-menu-btn">Encrypt String</button>
+	                    </div>
+	                    <div class="col-md-1"></div>
+	                    <div class="col-md-1">
+	                        <button id="main-menu-exit-option" class="btn btn-primary main-menu-btn">Exit</button>
+	                    </div>
+	                    <div class="col-md-5"></div>
+	                </div>
+	            </div>
+                <div class="row row-spacing"></div>
+                <div id="encrypt-button-container" class="row encrypt-display" style="display: none;">
+	                <div class="row row-spacing"></div>
+	                <div class="row">
+	                	<h2 class="center-it">Encrypt String Option</h2>
+	                </div>
+	                <div class="row row-spacing"></div>
+	                <div class="row">
+	                    <div class="col-md-1 center-it"></div>
+	                    <div class="col-md-3 center-it">
+	                        <button id="method-a-btn" class="btn btn-primary encrypt-method" data-method="A" type="button">Method A</button>
+	                    </div>
+	                    <div class="col-md-3 center-it">
+	                        <button id="method-b-btn" class="btn btn-primary encrypt-method" data-method="B" type="button">Method B</button>
+	                    </div>
+	                    <div class="col-md-3 center-it">
+	                        <button id="method-c-btn" class="btn btn-primary encrypt-method" data-method="C" type="button">Method C</button>
+	                    </div>
+	                    <div class="col-md-2 center-it"></div>
+	                </div>
+				</div>
+                <div id="encrypt-form-container" class="row encrypt-display" style="display: none;">
+	                <div class="row row-spacing"></div>
+ 	                <div class="row">
+	                	<div class="encryption-result center-it"></div>
+	                	<div id="encrypt-form-header"></div>
+	                    <form id="encrypt-form" class="encrypt-form-style" method="post">
+			                <div class="row row-spacing"></div>
+			                <div class="row">
+			                    <div class="col-md-2 center-it"></div>
+			                    <div class="col-md-2 center-it">
+	                                <lable for="encrypt-text" class="label-spacing">Encryption Text</lable>
+								</div>
+			                    <div class="col-md-4 center-it">
+	                                <input id="encrypt-text" type="text" name="encrypt-text" class="form-control" placeholder="Encryption Text">
+	                            </div>
+        	                    <div class="col-md-3 center-it">
+			                        <button id="encrypt-text-button" type="button" class="btn btn-success">Encrypt</button>
+	    		                </div>
+				                <div class="col-md-1 center-it"></div>
+		                    </div>
+		                </form>
+	                </div>
+                </div>
+                <div id="encryption-result-container">
+    	            <div class="row row-spacing"></div>
+ 	                <div class="row">
+	                	<div class="encryption-result center-it">
+	                	<p id="encyption-result-paragraph" class="center-it"></p>
+	                	<p id="encyption-result-error" class="center-it"></p>
+	                </div>
+	                </div>
+	            </div>
+				<div id="exit-program-container" style="display: none;">
+	                <div class="row row-spacing"></div>
+	                <div class="row">
+	                	<h2 class="center-it">Program Exit</h2>
+	                </div>
+	            </div>
+            </div>
+        </main>
+        <script src="encrypt.js"></script>
+	</body>
+</html>

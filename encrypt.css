@@ -1,0 +1,41 @@
+/* Encyprtion Styling */
+
+/* hade css */
+body, html {
+    height: 100%;
+}
+
+/* The hero image */
+.hero-image {
+    /* The image from Cubic site used */
+    background-image: url("https://www.cubic.com/sites/default/files/styles/hero_compressed/public/2017-10/innovation.jpg");
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.row-spacing {
+    margin: 10px;
+}
+
+.center-it {
+	text-align: center;
+	width: 100%;
+}
+
+.main-menu-btn {
+	width: 130px;
+}
+
+.encrypt-form-style {
+	width: 100%;
+}
+.label-spacing {
+    margin-left: 2%;
+}
+
+.option-btn {
+	margin-left: 3%;
+}
